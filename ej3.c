@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  int m = 9999999, t = 0;
+  int t = 0;
   int a[2][3];
   for(int i = 0; i < 2; i++){
     for (int f = 0; f < 3; f++){
@@ -15,6 +15,7 @@ int main(){
   for(int i = 0; i < 2; i++){
     a[i][2] *= 3;
   }
+  int m = a[0][0];
   for(int i = 0; i < 2; i++){
     for (int f = 0; f < 3; f++){
       printf("%d\t", a[i][f]);
