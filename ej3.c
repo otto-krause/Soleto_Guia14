@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//No compila
 int main(){
   int t = 0;
   int a[2][3];

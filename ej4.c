@@ -3,7 +3,7 @@
 int main(){
   int t = 0, tl = 0;
   int a[3][12];
-  for(int i = 0; i < 3; i++){
+  for(int i = 0; i < 3; i++){//No conozco la cantidad de veces que se repite ni el orden de ingreso.
     for (int f = 0; f < 12; f++){
       printf("ingrese la recaudacion del colectivo %d de la linea %d: ", f+1, i+1);
       scanf("%d", &a[i][f]);

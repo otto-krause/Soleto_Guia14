@@ -1,5 +1,5 @@
 #include <stdio.h>
-const int CANT = 100;
+const int CANT = 5;
 void mostrar(int g, int h, int x[g][h]){
     printf("\t1er T\t2do T\t3er T\tPromedio\n");
     int p;
