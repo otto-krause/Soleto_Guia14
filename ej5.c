@@ -1,10 +1,11 @@
 #include <stdio.h>
+const int CANT = 100;
 void mostrar(int g, int h, int x[g][h]){
-    printf("\t1er T\t2do T\t3er T\tPromedio");
+    printf("\t1er T\t2do T\t3er T\tPromedio\n");
     int p;
     for(int i = 0; i < h; i++){
         p=0;
-        printf("%d :\t", i);
+        printf("%d :\t", i+1);
         for (int f = 0; f < g; f++){
             printf("%d\t", x[f][i]);
             p+=x[f][i];
@@ -14,14 +15,14 @@ void mostrar(int g, int h, int x[g][h]){
     }
 }
 int main(){
-    int a[3][100];
+    int a[3][CANT];
     for(int i = 0; i < 3; i++){
-        for (int f = 0; f < 100; f++){
+        for (int f = 0; f < CANT; f++){
             printf("ingrese la nota del alumno %d en el trimestre %d: ", f+1, i+1);
             scanf("%d", &a[i][f]);
         }
     }
-    mostrar(3, 100, a);
+    mostrar(3, CANT, a);
     char resp[3];
     for(;;){
         printf("desea cambiar un dato?");
@@ -30,8 +31,8 @@ int main(){
             printf("incerte el numero de legajo del alumno, el trimestre a corregir y la nueva nota: ");
             int t,v,n;
             scanf("%d %d %d", &v, &t, &n);
-            a[t][v] = n;
-            mostrar(3, 100, a);
+            a[t-1][v-1] = n;
+            mostrar(3, 4, a);
         }
         else
             break;
