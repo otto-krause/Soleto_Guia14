@@ -25,7 +25,7 @@ int main(){
     char resp[3];
     for(;;){
         printf("desea cambiar un dato?");
-        scanf("%s", &resp);
+        scanf("%s", resp);
         if(resp[0] == 'S' || resp[0] == 's'){
             printf("incerte el numero de legajo del alumno, el trimestre a corregir y la nueva nota: ");
             int t,v,n;
