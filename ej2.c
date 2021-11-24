@@ -11,8 +11,8 @@ int main(){
   for(int i = 0; i < 3; i++){
     a[0][i] *= 4;
   }
-  for(int i = 0; i < 3; i++){
-    a[1][i] *= 3;//Multiplicar la tercer columna...
+  for(int i = 0; i < 2; i++){
+    a[i][2] *= 3;//Multiplicar la tercer columna...
   }
   for(int i = 0; i < 2; i++){
     for (int f = 0; f < 3; f++){
